@@ -1,0 +1,59 @@
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px; 
+    height:10vh;
+}
+.swbutton,.clockfunc{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.swtext{
+    font-size: 20px; 
+    height:5vh; 
+    width: 24.2%;
+}
+#notepad{
+    width:100%;
+}
+.notepadtext{
+    width: 100%; /* Set width to 90% of the window width */
+    height: 30vh; /* Set height to 50% of the window height */
+    resize: vertical; /* Allow resizing only vertically */
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+    overflow: auto;
+}
+.othertext{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 20px; 
+    height:5vh; 
+    width:100%;
+}
+#timerinput{
+    display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr; /* Three columns of equal width */
+  gap: 1%;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333;
+}
+.Time,.semicolon{
+        justify-content: center;
+        align-items: center;
+        text-align: center; /* Adjust width as needed */
+      height: 6vh; /* Adjust height as needed */
+      font-size:4vh;
+}
+.titext{
+    font-size: 20px; 
+    height:5vh; 
+    width: 32.5%;
+}

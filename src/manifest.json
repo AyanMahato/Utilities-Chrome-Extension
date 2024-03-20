@@ -1,0 +1,11 @@
+{
+    "manifest_version": 3,
+    "name": "Clock Extension",
+    "version": "1.0",
+    "description": "A simple digital clock extension",
+    "side_panel": {
+      "default_path": "Utility.html"
+    },
+    "permissions": ["activeTab", "sidePanel"]
+  }
+  

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Digital Clock</title>
+  <link rel="stylesheet" type="text/css" href="Utility.css">
+</head>
+<body>
+  <!--main options-->
+  <select id="options" name="options">
+    <option value="stopwatch">Stopwatch</option>
+    <option value="timer">Timer</option>
+    <option value="timezone">Timezone</option>
+  </select>
+  
+
+  
+<!--Stopwatch-->
+  <div id="csw">
+  <button class="othertext">Stopwatch</button>
+  <div id="stopwatch" class="container">
+  00:00:00:00</div><br>
+  <div id="laps"></div>
+  <div class="swbutton">
+  <button id="startsw" class="swtext">Start</button>
+  <button id="lapsw" class="swtext">Lap</button>
+  <button id="stopsw" class="swtext">Pause</button>
+  <button id="resetsw" class="swtext">Reset</button>
+</div><br>
+</div>
+
+<!--Timer-->
+<div id="cti">
+  <button class="othertext">Timer</button>
+  <div id="timerinput">
+  <input type="number" class="Time" id="timerhours" min="0"max="99" placeholder="00"><div class="semiscolon">:</div>
+  <input type="number" class="Time" id="timerminutes" min="0" max="59" placeholder="00"><div class="semiscolon">:</div>
+  <input type="number" class="Time" id="timerseconds" min="0" max="59" placeholder="00"></div><br>
+  <div id="timeleft" class="container">00:00:00:00</div>
+  <div class="swbutton">
+    <button id="startti" class="titext">Start</button>
+    <button id="stopti" class="titext">Pause</button>
+    <button id="resetti" class="titext">Reset</button></div><br>
+  </div>
+
+  <!--Timezone-->
+<div id="clocktimezone">
+  <select id="timezoneselect" name="timezoneselect">
+    <!--options-->
+  </select>
+  <div id="timezonetime" class="container"></div>
+</div>
+
+<!--Notepad-->
+  <div id="notepad">
+    <button class="othertext">Notepad</button>
+  
+    <textarea class="notepadtext" ></textarea>
+ 
+  </div>
+    <script type="module" src="Utility.js"></script>
+</body>
+</html>
